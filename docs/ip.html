@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="ip.css"/>
     <title>Home Page</title>
 </head>
 <body>
@@ -42,8 +42,74 @@
         </ul>
     </div>
 </nav>
-<h1>IP Addresses and DNS</h1>
-content here
+<div class="jumbotron jumbotron-fluid" id="ipJumbotron" alt="Background image of an address printed on an envelope.">
+    <div class="container">
+        <h1 class="display-4">IP Addresses, Packets, and Routing</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width:18rem">
+                <div class="card-body">
+                    <b>TL;DR:</b> Internet info is sent in packets and routed to the IP addresses.
+                </div>
+            </div>
+            <div style="width:18rem; margin-top:1rem">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>ICANN</b> - Internet Corporation for Assigned Names and Numbers</li>
+                    <li class="list-group-item"><b>DNS</b> - Domain Name System</li>
+                    <li class="list-group-item"><b>IP Address</b> - A series of numbers used by the computers that make
+                        up the Internet to find one another
+                    </li>
+                    <li class="list-group-item"><b>Domain</b> - A website name</li>
+                    <li class="list-group-item"><b>Registrar</b> - A company that sells domain names that aren't
+                        currently owned and are available for you to register
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8">
+            <p>
+                <b>ICANN</b> is an American nonprofit dedicated to keeping the Internet secure, stable and
+                interoperable. It promotes competition and develops the
+                policy on the Internet's unique identifiers, coordinating them and allowing a global Internet.
+            </p>
+            <p>
+                The <b>DNS</b> makes the Internet accessible to humans. Computers find each other
+                using <b>IP addresses</b>. However, we would struggle to remember these
+                IP addresses, so the DNS uses letters as opposed to numbers. A specific series of letters would link to
+                a specific IP address. So this means that a website can be found at a url like "icann.org" instead of
+                “192.0.32.7”. This system also allows for flexibility: the link between a domain name and IP
+                address can change quickly, so a change in this aspect would be recognized by the entire Internet in two
+                days time because of the DNS infrastructure which is constantly updating.
+            </p>
+            <img src="https://images.pexels.com/photos/4160089/pexels-photo-4160089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="Typewriter with the words 'Domain Search' typed on it." style="width:18rem; padding:1rem"
+                 class="center">
+            <p>
+                <b>Domains</b> are sold by <b>registrars</b> that ICANN has contracts with. ICANN runs their
+                accreditation while the
+                registrars charge as they please, providing a consistent and stable environment for the DNS (and ergo
+                the Internet).
+            </p>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                <a class="page-link" href="domain.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="domain.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="dns.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="http.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="html.html">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="dns.html">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
