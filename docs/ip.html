@@ -57,41 +57,43 @@
             </div>
             <div style="width:18rem; margin-top:1rem">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><b>ICANN</b> - Internet Corporation for Assigned Names and Numbers</li>
-                    <li class="list-group-item"><b>DNS</b> - Domain Name System</li>
+                    <li class="list-group-item"><b>Protocol</b> - A well known set of rules and standards used to
+                        communicate between machines
+                    </li>
                     <li class="list-group-item"><b>IP Address</b> - A series of numbers used by the computers that make
                         up the Internet to find one another
                     </li>
-                    <li class="list-group-item"><b>Domain</b> - A website name</li>
-                    <li class="list-group-item"><b>Registrar</b> - A company that sells domain names that aren't
-                        currently owned and are available for you to register
-                    </li>
+                    <li class="list-group-item"><b>TCP</b> - Transmission and Control Protocol</li>
                 </ul>
             </div>
         </div>
         <div class="col-8">
             <p>
-                <b>ICANN</b> is an American nonprofit dedicated to keeping the Internet secure, stable and
-                interoperable. It promotes competition and develops the
-                policy on the Internet's unique identifiers, coordinating them and allowing a global Internet.
+                The Internet is possible because of the different sets of <b>protocols</b> which make it functional. One such
+                protocol is the Internet Protocol, which allows for internet communication.
             </p>
             <p>
-                The <b>DNS</b> makes the Internet accessible to humans. Computers find each other
-                using <b>IP addresses</b>. However, we would struggle to remember these
-                IP addresses, so the DNS uses letters as opposed to numbers. A specific series of letters would link to
-                a specific IP address. So this means that a website can be found at a url like "icann.org" instead of
-                “192.0.32.7”. This system also allows for flexibility: the link between a domain name and IP
-                address can change quickly, so a change in this aspect would be recognized by the entire Internet in two
-                days time because of the DNS infrastructure which is constantly updating.
+                All devices connected to the Internet have a unique <b>IP address</b>. When a computer visits a website, it is
+                simply asking a computer at another IP address for information. It does this by sending a message to
+                containing its own IP so the other computer knows where to send its response.
             </p>
-            <img src="https://images.pexels.com/photos/4160089/pexels-photo-4160089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                 alt="Typewriter with the words 'Domain Search' typed on it." style="width:18rem; padding:1rem"
+            <p>
+                IP Addresses are organized in a hierarchy, much like how addresses are written when sending mail. Traditional
+                IP addresses are 32 bits long. The earlier numbers represent the country and regional network, while the
+                later numbers represent the subnetworks and then specific address. This format is IPv4, but we are transitioning
+                to IPv6 to allow for more unique IP addresses.
+            </p>
+
+            <img src="https://images.pexels.com/photos/4464817/pexels-photo-4464817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                 alt="An opened cardboard box sitting on a table." style="width:18rem; padding:1rem"
                  class="center">
             <p>
-                <b>Domains</b> are sold by <b>registrars</b> that ICANN has contracts with. ICANN runs their
-                accreditation while the
-                registrars charge as they please, providing a consistent and stable environment for the DNS (and ergo
-                the Internet).
+                But how is the information on the Internet actually sent? One might assume info is sent on a fixed path, but
+                it is not. Information is actually broken down into packets, and routers select the best paths to send these
+                packets on. They do not always choose the same path, so packets may arrive at different times. <b>TCP</b>
+                manages the sending and receiving of the data as packets by verifying that all packets are received and then
+                assembled in order. For example, if you are requesting a video from YouTube, the video will not play until
+                all the packets are received, assembled, and verified by TCP.
             </p>
         </div>
     </div>
