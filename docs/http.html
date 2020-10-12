@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="http.css"/>
     <title>Home Page</title>
 </head>
 <body>
@@ -35,15 +35,86 @@
                     <a class="dropdown-item" href="domain.html">Domain Names and ICANN</a>
                     <a class="dropdown-item" href="ip.html">IP Addresses, Packets, and Routing</a>
                     <a class="dropdown-item" href="dns.html">DNS</a>
-                    <a class="dropdown-item" href="http.html">HTTP and HTTPS Protocls</a>
+                    <a class="dropdown-item" href="http.html">HTTP and HTTPS Protocols</a>
                     <a class="dropdown-item" href="html.html">W3C and HTML and CSS</a>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
-<h1>HTTP and HTML</h1>
-content here
+<div class="jumbotron jumbotron-fluid" id="httpJumbotron" alt="Background image of an address printed on an envelope.">
+    <div class="container">
+        <h1 class="display-4">HTTP and HTTPS Protocols</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width:18rem">
+                <div class="card-body">
+                    <b>TL;DR:</b> HTTP is the unsecured method of communication over the Internet, while HTTPS is secured.
+                </div>
+            </div>
+            <div style="width:18rem; margin-top:1rem">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Protocol</b> - A well known set of rules and standards used to
+                        communicate between machines
+                    </li>
+                    <li class="list-group-item"><b>IP Address</b> - A series of numbers used by the computers that make
+                        up the Internet to find one another
+                    </li>
+                    <li class="list-group-item"><b>TCP</b> - Transmission and Control Protocol</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8">
+            <p>
+                The Internet is possible because of the different sets of <b>protocols</b> which make it functional. One such
+                protocol is the Internet Protocol, which allows for internet communication.
+            </p>
+            <p>
+                All devices connected to the Internet have a unique <b>IP address</b>. When a computer visits a website, it is
+                simply asking a computer at another IP address for information. It does this by sending a message to
+                containing its own IP so the other computer knows where to send its response.
+            </p>
+            <p>
+                IP Addresses are organized in a hierarchy, much like how addresses are written when sending mail. Traditional
+                IP addresses are 32 bits long. The earlier numbers represent the country and regional network, while the
+                later numbers represent the subnetworks and then specific address. This format is IPv4, but we are transitioning
+                to IPv6 to allow for more unique IP addresses.
+            </p>
+            <figure>
+                <img src="https://images.pexels.com/photos/4464817/pexels-photo-4464817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                     alt="An opened package box sitting on a table."
+                     style="width:18rem; padding:1rem"
+                     class = "center">
+                <figcaption style = "margin-left:13rem">An opened package box sitting on a table.</figcaption>
+            </figure>
+            <p>
+                But how is the information on the Internet actually sent? One might assume info is sent on a fixed path, but
+                it is not. Information is actually broken down into packets, and routers select the best paths to send these
+                packets on. They do not always choose the same path, so packets may arrive at different times. <b>TCP</b>
+                manages the sending and receiving of the data as packets by verifying that all packets are received and then
+                assembled in order. For example, if you are requesting a video from YouTube, the video will not play until
+                all the packets are received, assembled, and verified by TCP.
+            </p>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                <a class="page-link" href="dns.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="domain.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="ip.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="dns.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="html.html">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="html.html">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
