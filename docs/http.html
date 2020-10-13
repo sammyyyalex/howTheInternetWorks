@@ -52,51 +52,50 @@
         <div class="col-4">
             <div class="card" style="width:18rem">
                 <div class="card-body">
-                    <b>TL;DR:</b> HTTP is the unsecured method of communication over the Internet, while HTTPS is secured.
+                    <b>TL;DR:</b> HTTP is the unsecured method of communication over the Internet, while HTTPS is
+                    secured.
                 </div>
             </div>
             <div style="width:18rem; margin-top:1rem">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><b>Protocol</b> - A well known set of rules and standards used to
-                        communicate between machines
-                    </li>
-                    <li class="list-group-item"><b>IP Address</b> - A series of numbers used by the computers that make
-                        up the Internet to find one another
-                    </li>
-                    <li class="list-group-item"><b>TCP</b> - Transmission and Control Protocol</li>
+                    <li class="list-group-item"><b>HTTP</b> - Hypertext Transfer Protocol</li>
+                    <li class="list-group-item"><b>SSL</b> - Secure Sockets Layer</li>
+                    <li class="list-group-item"><b>TSL</b> - Transport Layer Security</li>
                 </ul>
             </div>
         </div>
         <div class="col-8">
             <p>
-                The Internet is possible because of the different sets of <b>protocols</b> which make it functional. One such
-                protocol is the Internet Protocol, which allows for internet communication.
+                <b>HTTP</b> is a language used to communicate between web browsers and servers. When a device wants to
+                visit
+                a website, it sends a GET request (usually a document request) of the website code.
             </p>
             <p>
-                All devices connected to the Internet have a unique <b>IP address</b>. When a computer visits a website, it is
-                simply asking a computer at another IP address for information. It does this by sending a message to
-                containing its own IP so the other computer knows where to send its response.
+                Since data on the Internet is written on plain text on an open network with shared connections, this
+                makes
+                data vulnerable to hackers who wish to gain access to information users are sending over the Internet.
+                Safe
+                websites prevent this from happening by asking your device to communicate on a secure channel.
             </p>
             <p>
-                IP Addresses are organized in a hierarchy, much like how addresses are written when sending mail. Traditional
-                IP addresses are 32 bits long. The earlier numbers represent the country and regional network, while the
-                later numbers represent the subnetworks and then specific address. This format is IPv4, but we are transitioning
-                to IPv6 to allow for more unique IP addresses.
+                This is done by using <b>SSL</b> and its successor <b>TSL</b>. These provide an extra layer of security
+                around communication over the Internet. You know SSL and TLS are active when you see the S in HTTP,
+                such as in this website's url "https://sammyyyalex.github.io/howTheInternetWorks/" and the lock next to
+                the browser address bar. HTTPS protocols ensure that your HTTP requests are
+                secure and protected.
             </p>
             <figure>
-                <img src="https://images.pexels.com/photos/4464817/pexels-photo-4464817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                     alt="An opened package box sitting on a table."
-                     style="width:18rem; padding:1rem"
-                     class = "center">
-                <figcaption style = "margin-left:13rem">An opened package box sitting on a table.</figcaption>
+                <img src="images/secureWebsite.jpg"
+                     alt="A picture of the URL https://sammyyyalex.github.io/howTheInternetWorks/"
+                     style="width:25rem; padding:1rem"
+                     class="center">
+                <figcaption style="margin-left:11rem">A pictured example of a safe website using HTTPS.</figcaption>
             </figure>
             <p>
-                But how is the information on the Internet actually sent? One might assume info is sent on a fixed path, but
-                it is not. Information is actually broken down into packets, and routers select the best paths to send these
-                packets on. They do not always choose the same path, so packets may arrive at different times. <b>TCP</b>
-                manages the sending and receiving of the data as packets by verifying that all packets are received and then
-                assembled in order. For example, if you are requesting a video from YouTube, the video will not play until
-                all the packets are received, assembled, and verified by TCP.
+                Browsers know a website is secure because they provide digital certificates - an ID card proving that it
+                is the website it claims to be - which are published by certificate authorities. If a website
+                certificate is not proper, your browser will issue a warning. This allows for safe communication over
+                the Internet.
             </p>
         </div>
     </div>
