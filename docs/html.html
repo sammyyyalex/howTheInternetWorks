@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="html.css"/>
     <title>Home Page</title>
 </head>
 <body>
@@ -35,15 +35,84 @@
                     <a class="dropdown-item" href="domain.html">Domain Names and ICANN</a>
                     <a class="dropdown-item" href="ip.html">IP Addresses, Packets, and Routing</a>
                     <a class="dropdown-item" href="dns.html">DNS</a>
-                    <a class="dropdown-item" href="http.html">HTTP and HTTPS Protocls</a>
+                    <a class="dropdown-item" href="http.html">HTTP and HTTPS Protocols</a>
                     <a class="dropdown-item" href="html.html">W3C and HTML and CSS</a>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
-<h1>W3C and HTML and CSS</h1>
-content here
+<div class="jumbotron jumbotron-fluid" id="htmlJumbotron" alt="Background image of an address printed on an envelope.">
+    <div class="container">
+        <h1 class="display-4">W3C and HTML and CSS</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width:18rem">
+                <div class="card-body">
+                    <b>TL;DR:</b> W3C develops the protocols that allow for web pages built with HTML and CSS.
+                </div>
+            </div>
+            <div style="width:18rem; margin-top:1rem">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>HTTP</b> - Hypertext Transfer Protocol</li>
+                    <li class="list-group-item"><b>SSL</b> - Secure Sockets Layer</li>
+                    <li class="list-group-item"><b>TSL</b> - Transport Layer Security</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-8">
+            <p>
+                <b>HTTP</b> is a language used to communicate between web browsers and servers. When a device wants to
+                visit
+                a website, it sends a GET request (usually a document request) of the website code.
+            </p>
+            <p>
+                Since data on the Internet is written on plain text on an open network with shared connections, this
+                makes
+                data vulnerable to hackers who wish to gain access to information users are sending over the Internet.
+                Safe
+                websites prevent this from happening by asking your device to communicate on a secure channel.
+            </p>
+            <p>
+                This is done by using <b>SSL</b> and its successor <b>TSL</b>. These provide an extra layer of security
+                around communication over the Internet. You know SSL and TLS are active when you see the S in HTTP,
+                such as in this website's url "https://sammyyyalex.github.io/howTheInternetWorks/" and the lock next to
+                the browser address bar. HTTPS protocols ensure that your HTTP requests are
+                secure and protected.
+            </p>
+            <figure>
+                <img src="images/secureWebsite.jpg"
+                     alt="A picture of the URL https://sammyyyalex.github.io/howTheInternetWorks/"
+                     style="width:25rem; padding:1rem"
+                     class="center">
+                <figcaption style="margin-left:11rem">A pictured example of a safe website using HTTPS.</figcaption>
+            </figure>
+            <p>
+                Browsers know a website is secure because they provide digital certificates - an ID card proving that it
+                is the website it claims to be - which are published by certificate authorities. If a website
+                certificate is not proper, your browser will issue a warning. This allows for safe communication over
+                the Internet.
+            </p>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                <a class="page-link" href="http.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="domain.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="ip.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="dns.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="http.html">4</a></li>
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
